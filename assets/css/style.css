@@ -5,6 +5,41 @@
 	box-sizing: border-box;
 }
 
+/* 
+	sezione: COLORI
+
+	.bkg_cl{
+		background-color: #ffffff;
+		background-color: #f2f7ff;
+		background-color: #377dff;
+		background-color: #1e1e1e;
+		background-color: #00000026;
+	}
+	.txt_cl{
+		color: #ffffff;
+		color: #6cdac1;
+		color: #ff796d;
+		color: #8e989f;
+		color: #377dff;
+		color: #495057;
+		color: #1e1e1e;
+		color: #000000;
+		color: #000000e6;
+	}
+	.brdr_cl{
+		border-color: #ffffff;
+		border-color: #6cdac1;
+		border-color: #ff796d;
+		border-color: #8e989f;
+		border-color: #377dff;
+		border-color: #495057;
+		border-color: #1e1e1e;
+		border-color: #00000008;
+		border-color: #0000000d;
+		border-color: #00000014;
+	}
+*/
+
 /* utility */
 .container {
 	max-width: 1170px;

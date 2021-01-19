@@ -1,0 +1,21 @@
+/* reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* utility */
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+body{
+	background-color: purple;
+}
+
+/* flex */
+.d_flex {
+	display: flex;
+}

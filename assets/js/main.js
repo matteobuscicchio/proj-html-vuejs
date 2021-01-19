@@ -1,7 +1,8 @@
+// Aggiungere Header e Footer con VueJs 
+// creando una struttura dati che consenta di inserire i link nelle navbar.
 
-
-let app = new Vue({
-    el: '#app',
+let sofboxApp = new Vue({
+    el: '#sofbox',
     data: {},
 
     methods: {},

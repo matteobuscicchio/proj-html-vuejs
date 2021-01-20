@@ -89,7 +89,7 @@ li{
 
 /* sezione: NAVbar & logo */
 nav{
-	margin: 20px;
+	margin-bottom: 15px;
 }
 
 .nav_img{
@@ -98,7 +98,7 @@ nav{
 
 .link_ul > li{
 	display: inline-block;
-	padding-top: 15px;
+	padding-top: 20px;
 	padding-bottom: 15px;
 	margin: 0px 10px 0px 10px;
 }

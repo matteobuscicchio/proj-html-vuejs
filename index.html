@@ -41,7 +41,7 @@
 							<form @submit.prevent="funzioneEsempio(quello,che,vuoi)">
 								<i class="fas fa-search"></i><!-- probabilmente questo andrà in un div che farà comparire una searchbar --> <!-- <input class="" type="text" v-model="" placeholder="Search"> -->
 								<i class="fas fa-shopping-cart">
-									<p class="counter">0</p>
+									<span class="counter">0</span>
 								</i>
 							</form>
 							<button class="button" type="submit" v-html='button.started'></button>
@@ -55,7 +55,6 @@
 					<!-- sezione: Platform & Button -->
 					<div class="space_around pltf_btn">
 
-						<!-- v-for='content in platform' -->
 						<div class="platform"  v-for='content in platform'>
 							<h1 v-html='content.title'></h1>
 							<p v-html='content.description'></p>
@@ -71,7 +70,7 @@
 				<main><!-- qui verrà inserito il contenuto del sito suddiviso in 5 blocchi -->
 
 					<!-- blocco 1: Online Marketing -->
-					<ul class="center on_marketing_ul">
+					<ul class="on_marketing_ul center">
 						<li class="on_marketing"  v-for="content in onlineMarketing">
 							<img :src="img.onMarketing" alt="A simple pc immage">
 							<h3 v-html='content.title'></h3>
@@ -84,6 +83,19 @@
 					</ul>
 
 					<!-- blocco 2: Tips&Tricks -->
+
+					<div class="space_around pltf_btn">
+
+						<div class="platform"  v-for='content in platform'>
+							<h1 v-html='content.title'></h1>
+							<p v-html='content.description'></p>
+							<button class="button" type="submit" v-html='button.more'></button>
+						</div>
+
+						<div class="jumbotron">
+							<img :src="img.jumbotron" alt="Jumbotron">
+						</div>
+					</div>
 
 					<!-- blocco 3: Popular Features -->
 

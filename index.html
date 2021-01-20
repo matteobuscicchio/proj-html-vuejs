@@ -35,8 +35,7 @@
 	
 						<div class="space_between">
 							<ul class="link_ul">
-								<li @click="activeLink(linkIndex)" v-for="(link,linkIndex) in navbar" v-if="navbar[linkIndex].active" :class="`navbar ${link.style}`">{{link.section}}</li>
-								<li @click="activeLink(linkIndex)" v-for="(link,linkIndex) in navbar" v-if="(!(navbar[linkIndex].active))">{{link.section}}</li>
+								<li v-for="(link,linkIndex) in navbar" @click="activeLink(linkIndex)" :class='addClass(linkIndex)'>{{link.section}}</li>
 							</ul>
 	
 							<form @submit.prevent="funzioneEsempio(quello,che,vuoi)">

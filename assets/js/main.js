@@ -14,22 +14,22 @@ let sofboxApp = new Vue({
                 section: 'Home'
             },
             {
-                style: 'active',
+                style: '',
                 active: false,
                 section: 'About us'
             },
             {
-                style: 'active',
+                style: '',
                 active: false,
                 section: 'Feature'
             },
             {
-                style: 'active',
+                style: '',
                 active: false,
                 section: 'Testimonial'
             },
             {
-                style: 'active',
+                style: '',
                 active: false,
                 section: 'Contact US'
             },
@@ -68,6 +68,15 @@ let sofboxApp = new Vue({
         activeLink: function(index){
             this.linkIndex = index;
             console.log(this.linkIndex);
+        },
+        addClass: function(i){
+            let activeSearch = this.navbar[i].active;
+            let activeStyle = this.navbar[i].style;
+            if (!(activeSearch)) {
+                return
+            } else {
+                return activeStyle = 'active'
+            }
         },
     },
     mounted(){}

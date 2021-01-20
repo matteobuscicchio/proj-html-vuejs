@@ -50,7 +50,7 @@ body{
 }
 
 .container {
-	max-width: 1172px;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 
@@ -98,6 +98,7 @@ nav{
 
 .link_ul > li{
 	display: inline-block;
+	padding-top: 15px;
 	padding-bottom: 15px;
 	margin: 0px 10px 0px 10px;
 }
@@ -129,7 +130,7 @@ form>.fa-shopping-cart{
 
 
 /* sezione: HEADER */
-.bck_f2f7ff{
+.pltf_btn{
 	height: 370px;
 	background-color: #f2f7ff;
 }

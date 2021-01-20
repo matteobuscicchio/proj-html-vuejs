@@ -24,23 +24,19 @@
 
 			<div class="container">
 
-				<header><!-- qui verrà inserita la navbar, l'immagine di background e il contenuto platform for your growth -->
+				<header>
 
-					<!-- sezione: HEADER TOP -->
+					<!-- HEADER TOP -->
 
 					<!-- sezione: NAVbar & logo -->
-					<nav class="space_around"><!-- qui verrà inserita la navbar & logo -->
+					<nav class="space_around">
 						
-						<img class="nav_img" src="assets/img/logo.png" alt="logo sofbox">
+						<img class="nav_img" :src="logo" alt="logo sofbox">
 	
 						<div class="space_between">
-	
-							<ul class="link_ul"><!-- questa lista verrà generata con un ciclo v-for in un secondo momento -->
-								<li class="active">Home</li>
-								<li>About us</li>
-								<li>Feature</li>
-								<li>Testimonial</li>
-								<li>Contact US</li>
+							<ul class="link_ul">
+								<li @click="activeLink(linkIndex)" v-for="(link,linkIndex) in navbar" v-if="navbar[linkIndex].active" :class="`navbar ${link.style}`">{{link.section}}</li>
+								<li @click="activeLink(linkIndex)" v-for="(link,linkIndex) in navbar" v-if="(!(navbar[linkIndex].active))">{{link.section}}</li>
 							</ul>
 	
 							<form @submit.prevent="funzioneEsempio(quello,che,vuoi)">
@@ -55,7 +51,7 @@
 
 
 
-					<!-- sezione: HEADER LOWER -->
+					<!-- HEADER LOWER -->
 
 					<!-- sezione: Platform & Button -->
 					<div class="space_around pltf_btn">
@@ -75,6 +71,19 @@
 				<main><!-- qui verrà inserito il contenuto del sito suddiviso in 5 blocchi -->
 
 					<!-- sezione: Online Marketing -->
+					<ul v-for="(text) in onlineMarketing">
+						<li>
+							<h4>{{text.name}}</h4>
+							<p>{{text.description}}</p>
+
+							<ul>
+								<li>{{text.seo}}</li>
+								<li>{{text.sem}}</li>
+								<li>{{text.strategy}}</li>
+								<li>{{text.management}}</li>
+							</ul>
+						</li>
+					</ul>
 
 					<!-- sezione: Tips&Tricks -->
 

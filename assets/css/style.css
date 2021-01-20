@@ -82,12 +82,17 @@ li{
 	justify-content: space-between;
 	align-items: baseline;
 }
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
 
 
 
 
-
-/* sezione: NAVbar & logo */
+/* HEADER TOP */
+/** sezione: NAVbar & logo */
 nav{
 	margin-bottom: 15px;
 }
@@ -130,12 +135,13 @@ form>.fa-shopping-cart{
 }
 
 
-/* sezione: HEADER */
+
+/* HEADER LOWER */
 /* sezione: Platform & Button */
 .pltf_btn{
 	height: 370px;
 	background-color: #f2f7ff;
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 }
 
 .platform>h1{
@@ -146,6 +152,7 @@ form>.fa-shopping-cart{
 .platform>p{
 	margin-bottom: 30px;
 	line-height: 2em;
+	color:   #8e989f;
 }
 .platform>.button{
 	margin-bottom: 60px;
@@ -160,7 +167,43 @@ form>.fa-shopping-cart{
 }
 
 /* MAIN */
-/* sezione: Online Marketing */
+/* blocco 1: Online Marketing */
+.on_marketing_ul{
+	margin-bottom: 50px;
+}
+
+.on_marketing{
+	margin: 40px;
+}
+.on_marketing > img{
+	width: 60px;
+	position: relative;
+	transform: translate(-130%, 100%);
+}
+.on_marketing > h3{
+	font-weight: 100;
+	font-size: 1.5em;
+}
+.on_marketing > p{
+	color: #8e989f;
+	line-height: 1.5em;
+	font-size: 1.2em;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+.on_marketing > span{
+	margin-bottom: 15px;
+	display: block;
+}
+
+span{
+	font-weight: 600;
+}
+
+span > i{
+	margin-right: 15px;
+	color: #377dff;
+}
 /* sezione: Tips&Tricks */
 /* sezione: Popular Features */
 /* sezione: Testimonial */

@@ -31,11 +31,11 @@
 					<!-- sezione: NAVbar & logo -->
 					<nav class="space_around">
 						
-						<img class="nav_img" :src="logo" alt="logo sofbox">
+						<img class="nav_img" :src="img.logo" alt="sofbox logo">
 	
 						<div class="space_between">
 							<ul class="link_ul">
-								<li v-for="(link,linkIndex) in navbar" @click="activeLink(linkIndex)" :class='addClass(linkIndex)'>{{link.section}}</li>
+								<li v-for="(link,linkIndex) in navbar" @click="activeLink(linkIndex)" :class='addClass(linkIndex)' v-html='link.section'></li>
 							</ul>
 	
 							<form @submit.prevent="funzioneEsempio(quello,che,vuoi)">
@@ -44,7 +44,7 @@
 									<p class="counter">0</p>
 								</i>
 							</form>
-							<button class="button" type="submit">Get Started</button>
+							<button class="button" type="submit" v-html='button.started'></button>
 						</div>
 					</nav>
 
@@ -55,42 +55,41 @@
 					<!-- sezione: Platform & Button -->
 					<div class="space_around pltf_btn">
 
-						<div class="platform">
-							<h1>The biggest platform<br>for your growth.</h1>
-							<p>There are many variations of passages of Lorem Ipsum avfailable,<br> but the majority have suffered alteration in some form</p>
-							<button class="button" type="submit">Read More</button>
+						<!-- v-for='content in platform' -->
+						<div class="platform"  v-for='content in platform'>
+							<h1 v-html='content.title'></h1>
+							<p v-html='content.description'></p>
+							<button class="button" type="submit" v-html='button.more'></button>
 						</div>
 
 						<div class="jumbotron">
-							<img src="assets/img/jumbotron_2.png" alt="">
+							<img :src="img.jumbotron" alt="Jumbotron">
 						</div>
 					</div>
 				</header>
 
 				<main><!-- qui verrà inserito il contenuto del sito suddiviso in 5 blocchi -->
 
-					<!-- sezione: Online Marketing -->
-					<ul v-for="(text) in onlineMarketing">
-						<li>
-							<h4>{{text.name}}</h4>
-							<p>{{text.description}}</p>
-
-							<ul>
-								<li>{{text.seo}}</li>
-								<li>{{text.sem}}</li>
-								<li>{{text.strategy}}</li>
-								<li>{{text.management}}</li>
-							</ul>
+					<!-- blocco 1: Online Marketing -->
+					<ul class="center on_marketing_ul">
+						<li class="on_marketing"  v-for="content in onlineMarketing">
+							<img :src="img.onMarketing" alt="A simple pc immage">
+							<h3 v-html='content.title'></h3>
+							<p v-html='content.description'></p>
+							<span><i class="fas fa-check"></i>{{content.seo}}</span>
+							<span><i class="fas fa-check"></i>{{content.sem}}</span>
+							<span><i class="fas fa-check"></i>{{content.strategy}}</span>
+							<span><i class="fas fa-check"></i>{{content.management}}</span>
 						</li>
 					</ul>
 
-					<!-- sezione: Tips&Tricks -->
+					<!-- blocco 2: Tips&Tricks -->
 
-					<!-- sezione: Popular Features -->
+					<!-- blocco 3: Popular Features -->
 
-					<!-- sezione: Testimonial -->
+					<!-- blocco 4: Testimonial -->
 
-					<!-- sezione: Latest Posts -->
+					<!-- blocco 5: Latest Posts -->
 				</main>
 
 				<footer><!-- qui verrà inserito il contenuto del footer diviso in due blocchi -->

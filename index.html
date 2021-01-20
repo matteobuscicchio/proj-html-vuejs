@@ -25,11 +25,50 @@
 			<div class="container">
 
 				<header><!-- qui verrà inserita la navbar, l'immagine di background e il contenuto platform for your growth -->
-					
-					<nav><!-- qui verrà inserita la navbar & logo -->
+
+					<!-- sezione: HEADER TOP -->
+
+					<!-- sezione: NAVbar & logo -->
+					<nav class="space_around"><!-- qui verrà inserita la navbar & logo -->
+						<img class="nav_img" src="assets/img/logo.png" alt="logo sofbox">
+	
+						<div class="space_between">
+	
+							<ul class="link_ul"><!-- questa lista verrà generata con un ciclo v-for in un secondo momento -->
+								<li class="active">Home</li>
+								<li>About us</li>
+								<li>Feature</li>
+								<li>Testimonial</li>
+								<li>Contact US</li>
+							</ul>
+	
+							<form @submit.prevent="funzioneEsempio(quello,che,vuoi)">
+								<i class="fas fa-search"></i><!-- probabilmente questo andrà in un div che farà comparire una searchbar --> <!-- <input class="" type="text" v-model="" placeholder="Search"> -->
+								<i class="fas fa-shopping-cart">
+									<p class="counter">0</p>
+								</i>
+							</form>
+							<button class="button" type="submit">Get Started</button>
+						</div>
 					</nav>
 
+
+					
+					<!-- sezione: HEADER LOWER -->
+
 					<!-- sezione: Platform & Button -->
+					<div class="space_around bck_f2f7ff">
+
+						<div class="platform">
+							<h1>The biggest platform<br>for your growth.</h1>
+							<p>There are many variations of passages of Lorem Ipsum avfailable,<br> but the majority have suffered alteration in some form</p>
+							<button class="button" type="submit">Read More</button>
+						</div>
+
+						<div class="jumbotron">
+							<img src="assets/img/jumbotron_2.png" alt="">
+						</div>
+					</div>
 				</header>
 
 				<main><!-- qui verrà inserito il contenuto del sito suddiviso in 5 blocchi -->

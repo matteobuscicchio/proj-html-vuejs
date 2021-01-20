@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 }
 
+
 /* 
 	sezione: COLORI
 
@@ -40,26 +41,120 @@
 	}
 */
 
+
 /* utility */
+body{
+	font-size: 0.8em;
+	background-color: #ffffff;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
 .container {
-	max-width: 1170px;
+	max-width: 1172px;
 	margin: 0 auto;
 }
 
-body{
-	background-color: purple;
+.active{
+	color: #377dff;
+	border-bottom: solid;
+}
+
+.button{
+	padding: 10px 15px 10px 15px;
+	color: #ffffff;
+	border: 1px solid #377dff;
+	background-color: #377dff;
+	border-radius: 5px;
+}
+
+li{
+	list-style-type: none;
 }
 
 /* flex */
-.d_flex {
+.space_around{
 	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.space_between{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 
-/* HEADER */
-/* sezione: NAVbar & logo */
-/* sezione: Platform & Button */
 
+
+
+/* sezione: NAVbar & logo */
+nav{
+	margin: 20px;
+}
+
+.nav_img{
+	height: 40px;
+}
+
+.link_ul > li{
+	display: inline-block;
+	padding-bottom: 15px;
+	margin: 0px 10px 0px 10px;
+}
+
+.link_ul>.fa-shopping-cart{
+	position: relative;
+}
+
+form>.fa-search{
+	margin-left: 40px;
+	margin-right: 10px;
+}
+form>.fa-shopping-cart{
+	margin-left: 10px;
+	margin-right: 40px;
+}
+.counter{
+	width: 20px;
+	display: inline-block;
+	position: relative;
+	transform: translate(-35%, -50%);
+	color: white;
+	border: 1px solid  #377dff;
+	background-color:  #377dff;
+	text-align: center;
+	border-radius: 10px;
+	z-index: -1;
+}
+
+
+/* sezione: HEADER */
+.bck_f2f7ff{
+	height: 370px;
+	background-color: #f2f7ff;
+}
+
+/* sezione: Platform & Button */
+.platform>h1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	line-height: 2em;
+}
+.platform>p{
+	margin-bottom: 30px;
+	line-height: 2em;
+}
+.platform>.button{
+	margin-bottom: 60px;
+}
+
+.jumbotron{
+	position: relative;
+    transform: translate(0%, 6%);
+}
+.jumbotron>img{
+	height: 385px;
+}
 
 /* MAIN */
 /* sezione: Online Marketing */

@@ -366,12 +366,14 @@ span > i{
 }
 
 .latest_cards{
-	margin-left: 30px;
-	margin-right: 30px;
-	padding: 40px;
 	background-color: #ffffff80;
 	box-shadow: 0 5px 10px 5px #00000008, 0 0 20px 0#00000008;
 }
+
+.latest_car{
+	margin: 10px;
+}
+
 .latest_card > img{
 	width: 200px;
 	border: 1 solid white;

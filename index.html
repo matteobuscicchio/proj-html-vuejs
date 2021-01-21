@@ -86,13 +86,16 @@
 
 					<div class="space_around tips">
 
-						<div class="platform"  v-for='content in tipsAndTricks'>
-							<h2 v-html='content.title'></h2>
-							<p v-html='content.description'></p>
-						</div>
-						<div class="large_card" v-for='content in tipsAndTricks[1].cards'>
-							<h3 v-html='content.title'></h3>
-							<p v-html='content.description'></p>
+						<div class="tips_info">
+							<div class="platform_tips"  v-for='content in tipsAndTricks'>
+								<h2 v-html='content.title'></h2>
+								<p v-html='content.description'></p>
+							</div>
+	
+							<div class="large_card" v-for='content in tipsAndTricks[1].cards'>
+								<h3 v-html='content.title'></h3>
+								<p v-html='content.description'></p>
+							</div>
 						</div>
 
 						<div class="jumbotron">

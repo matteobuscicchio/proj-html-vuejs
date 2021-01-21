@@ -1,6 +1,6 @@
 /* reset */
 *{
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -159,6 +159,7 @@ form > .fa-shopping-cart{
 .pltf_btn{
 	background-color: #f2f7ff;
 	margin-bottom: 50px;
+	height: 380px;
 }
 
 .platform > h1{
@@ -173,12 +174,10 @@ form > .fa-shopping-cart{
 	margin-bottom: 60px;
 }
 
-.jumbotron{
-	position: relative;
-    transform: translate(0%, 6%);
-}
 .jumbotron > img{
-	height: 385px;
+	position: relative;
+	top: 25px;
+    height: 400px;
 }
 
 
@@ -187,7 +186,6 @@ form > .fa-shopping-cart{
 /* MAIN */
 main{
 	width: 1000px;
-	margin: 0px auto;
 }
 
 
@@ -228,29 +226,18 @@ span > i{
 	margin-bottom: 50px;
 }
 
-.platform > h3{
+.platform_tips > h3{
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
-.platform > p{
+.platform_tips > p{
 	margin-bottom: 30px;
-}
-
-.platform > .button{
-	margin-bottom: 60px;
 }
 
 .large_card > h3{
 	color: #377dff;
 }
 
-.jumbotron{
-	position: relative;
-    transform: translate(0%, 6%);
-}
-.jumbotron > img{
-	height: 385px;
-}
 
 /* blocco 3: Popular Features */
 /* blocco 4: Testimonial */

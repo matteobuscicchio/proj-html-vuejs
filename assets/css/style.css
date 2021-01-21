@@ -237,7 +237,7 @@ span > i{
 .card{
 	padding-top: 15px;
 	padding-bottom: 15px;
-	margin: 1px;
+	margin-right: 15px;
 }
 .card > img{
 	width: 60px;
@@ -253,7 +253,7 @@ span > i{
 }
 
 .active_tip{
-	background-color: #000000;
+	box-shadow: 0 5px 10px 5px #00000008, 0 0 20px 0#00000008;
 }
 
 

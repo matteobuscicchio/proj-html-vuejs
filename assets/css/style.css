@@ -8,7 +8,7 @@
 
 /* 
 	sezione: COLORI
-/*  */
+
 	.bkg_cl{
 		background-color: #ffffff;
 		background-color: #f2f7ff;
@@ -47,6 +47,7 @@ body{
 	font-size: 0.8em;
 	background-color: #ffffff;
 	font-family: Helvetica, Arial, Sans-Serif;
+	overflow-x: hidden;
 }
 
 .container {
@@ -98,12 +99,11 @@ p{
 .space_between{
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 }
 .center{
 	display: flex;
 	justify-content: center;
-	align-items: baseline;
 }
 
 
@@ -184,10 +184,6 @@ form > .fa-shopping-cart{
 
 
 /* MAIN */
-main{
-	width: 1000px;
-}
-
 
 /* blocco 1: Online Marketing */
 .on_marketing_ul{
@@ -224,6 +220,7 @@ span > i{
 /* blocco 2: Tips&Tricks */
 .tips{
 	margin-bottom: 50px;
+	max-width: 1000px;
 }
 
 .tips > h3{
@@ -235,6 +232,7 @@ span > i{
 }
 
 .card{
+	width: 450px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	margin-right: 15px;
@@ -256,11 +254,76 @@ span > i{
 	box-shadow: 0 5px 10px 5px #00000008, 0 0 20px 0#00000008;
 }
 
+.jumbotron_mini > img{
+    height: 350px;
+}
+
 
 
 /* blocco 3: Popular Features */
+/* .features{
+	margin-bottom: 200px;
+} */
+
+.sphere{
+	height: 0px;
+}
+.sphere > img{
+    position: relative;
+    left: -320px;
+    top: -80px;
+	width: 380px;
+	z-index: -1;
+}
+
+.feature_info{
+	margin-left: 100px;
+}
+
+.feature_general > button{
+	margin-left: 0px;
+}
+
+.feature_cards{
+	max-width: 1024px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.feature_card{
+	margin: 10px;
+    padding: 5px;
+    width: 230px;
+}
+.feature_card > img{
+	width: 40px;
+	margin-top: 20px;
+}
+
+
+
+
 /* blocco 4: Testimonial */
+.wave{
+	position: relative;
+    left: -500px;
+    width: 2500px;
+    background-color: #f2f7ff;
+    height: 2000px;
+}
+.wave > img{
+	position: relative;
+    top: -4px;
+    left: 120px;
+}
+
+
+
+
 /* blocco 5: Latest Posts */
+
+
 
 
 /* FOOTER */

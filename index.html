@@ -91,7 +91,7 @@
 							</div>
 	
 							<div class="card space_around" v-for='(content,universalIndex) in cards' @click="indexFinder(universalIndex)" :class='addClassTips(universalIndex)'>
-								<img :src="content.cardImg" alt="Jumbotron whit talking persons">
+								<img :src="content.cardImg" alt="Explication card">
 								<div class="large_card">
 									<h3 v-html='content.title'></h3>
 									<p v-html='content.description'></p>
@@ -99,14 +99,37 @@
 							</div>
 						</div>
 
-						<div class="jumbotron">
+						<div class="jumbotron_mini">
 							<img :src="img.jumbotronTips" alt="Jumbotron whit talking persons">
 						</div>
 					</div>
 
 					<!-- blocco 3: Popular Features -->
+					<div class="sphere">
+						<img src="assets/img/sphere.png" alt="">
+					</div>
+
+					<div class="features">
+						<div class="space_around feature_general">
+							<div class="feature_info" v-for='content in infoFeatures'>
+								<h2 v-html='content.title'></h2>
+								<p v-html='content.description'></p>
+							</div>
+							<button class="button" type="submit" v-html='button.feature'></button>
+						</div>
+
+						<div class="feature_cards">
+							<div class="feature_card active_tip" v-for='(content,universalIndex) in featureCards'>
+								<h3 v-html='content.title'></h3>
+								<img :src="content.cardImg" alt="logo">
+							</div>
+						</div>
+					</div>
 
 					<!-- blocco 4: Testimonial -->
+					<div class="wave">
+						<img src="assets/img/wave.png" alt="">
+					</div>
 
 					<!-- blocco 5: Latest Posts -->
 				</main>

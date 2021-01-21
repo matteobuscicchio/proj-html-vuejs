@@ -17,6 +17,7 @@ let sofboxApp = new Vue({
             jumbotron:'assets/img/jumbotron_2.png',
             onMarketing: 'assets/img/onMarketing.png',
             jumbotronTips: 'assets/img/jumbotronTips.jpeg',
+            sphere: 'assets/img/sphere.png',
             logoSofbox: 'assets/img/logoesteso.png',
         },
         // sezione: NAVbar & logo
@@ -106,7 +107,49 @@ let sofboxApp = new Vue({
                 title: 'Technical SEO Adult',
                 description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti cumque ipsa delectus culpa quo repellat eos dicta, consectetur.`,
             },
-        ]
+        ],
+
+        // blocco 3: Popular Features
+        infoFeatures:[
+            {
+                title: 'Popular features that your business needs',
+                description: `Faff about only a quild blower i don't want no agro bleeding chimny pot <br> burke tosser cras nice one boot fanny!`,
+            }
+        ],
+        featureCards:[
+            {
+                title: 'Reporting Analysis',
+                cardImg: 'assets/img/logo.png',
+            },
+            {
+                title: 'Reporting Analysis',
+                cardImg: 'assets/img/logo.png',
+            },
+            {
+                title: 'Reporting Analysis',
+                cardImg: 'assets/img/logo.png',
+            },
+            {
+                title: 'Reporting Analysis',
+                cardImg: 'assets/img/logo.png',
+            },
+            {
+                title: 'Reporting Analysis',
+                cardImg: 'assets/img/logo.png',
+            },
+            {
+                title: 'Reporting Analysis',
+                cardImg: 'assets/img/logo.png',
+            },
+            {
+                title: 'Reporting Analysis',
+                cardImg: 'assets/img/logo.png',
+            },
+            {
+                title: 'Reporting Analysis',
+                cardImg: 'assets/img/logo.png',
+            },
+        ],
     },
 
     methods: {

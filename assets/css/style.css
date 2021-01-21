@@ -45,9 +45,11 @@
 /* utility */
 body{
 	font-size: 0.8em;
-	background-color: #ffffff;
 	font-family: Helvetica, Arial, Sans-Serif;
 	overflow-x: hidden;
+}
+header{
+	background-color: white;
 }
 
 .container {
@@ -305,18 +307,7 @@ span > i{
 
 
 /* blocco 4: Testimonial */
-.wave{
-	position: relative;
-    left: -500px;
-    width: 2500px;
-    background-color: #f2f7ff;
-    height: 2000px;
-}
-.wave > img{
-	position: relative;
-    top: -4px;
-    left: 120px;
-}
+
 
 
 

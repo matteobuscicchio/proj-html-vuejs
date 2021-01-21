@@ -5,6 +5,7 @@ let sofboxApp = new Vue({
     el: '#sofbox',
     data: {
         // sezione: UTILITY
+        universalIndex: 0,
         button:{
             started: 'Get Started',
             more: 'Read More',
@@ -19,7 +20,6 @@ let sofboxApp = new Vue({
             logoSofbox: 'assets/img/logoesteso.png',
         },
         // sezione: NAVbar & logo
-        linkIndex: 0,
         navbar:[
             {
                 style: '',
@@ -85,7 +85,6 @@ let sofboxApp = new Vue({
         ],
 
         // blocco 2: Tips&Tricks
-        tipsIndex: 0,
         infoTip:[
             {
                 title: 'Get tips tricks on how to <br> skyrocket your sales.',
@@ -111,11 +110,12 @@ let sofboxApp = new Vue({
     },
 
     methods: {
-        // sezione: NAVbar & logo
-        activeLink: function(index){
-            this.linkIndex = index;
-            console.log(this.linkIndex);
+        // sezione: UTILITY
+        indexFinder: function(index){
+            this.universalIndex = index;
+            console.log(this.universalIndex);
         },
+        // sezione: NAVbar & logo
         addClass: function(i){
             let activeSearch = this.navbar[i].active;
             if (!(activeSearch)) {
@@ -126,10 +126,6 @@ let sofboxApp = new Vue({
         },
 
         // blocco 2: Tips&Tricks
-        activeTip: function(index){
-            this.tipsIndex = index;
-            console.log(this.tipsIndex);
-        },
         addClassTips(i){
             let activeSearch = this.cards[i].active;
             if (!(activeSearch)) {

@@ -35,7 +35,7 @@
 	
 						<div class="space_between">
 							<ul class="link_ul">
-								<li v-for="(link,linkIndex) in navbar" @click="activeLink(linkIndex)" :class='addClass(linkIndex)' v-html='link.section'></li>
+								<li v-for="(link,universalIndex) in navbar" @click="indexFinder(universalIndex)" :class='addClass(universalIndex)' v-html='link.section'></li>
 							</ul>
 	
 							<form @submit.prevent="funzioneEsempio(quello,che,vuoi)">
@@ -47,8 +47,6 @@
 							<button class="button" type="submit" v-html='button.started'></button>
 						</div>
 					</nav>
-
-
 
 					<!-- HEADER LOWER -->
 
@@ -92,8 +90,7 @@
 								<p v-html='content.description'></p>
 							</div>
 	
-							<div class="card space_around" v-for='(content,tipsIndex) in cards'
-							@click="activeTip(tipsIndex)" :class='addClassTips(tipsIndex)'>
+							<div class="card space_around" v-for='(content,universalIndex) in cards' @click="indexFinder(universalIndex)" :class='addClassTips(universalIndex)'>
 								<img :src="content.cardImg" alt="Jumbotron whit talking persons">
 								<div class="large_card">
 									<h3 v-html='content.title'></h3>

@@ -205,6 +205,11 @@ let sofboxApp = new Vue({
             this.universalIndex = index;
             console.log(this.universalIndex);
         },
+
+        scrollToTop: function(){
+            window.scrollTo(0,0);
+        },
+        
         // sezione: NAVbar & logo
         addClass: function(i){
             let activeSearch = this.navbar[i].active;

@@ -126,6 +126,31 @@
 					</div>
 
 					<!-- blocco 4: Testimonial -->
+					<div class="testimonial">
+
+						<div class="testimonial_info" v-for='content in testimonial'>
+							<h2 v-html='content.title'></h2>
+							<p v-html='content.description'></p>
+						</div>
+
+						<div class="people_card">
+
+							<div class="people_container">
+								<div class="little_card" v-for='(content,universalIndex) in people'>
+									<img :src="content.img" alt="">
+									<h3 v-html='content.name'></h3>
+									<span v-html='content.role'></span>
+									<p v-html='content.quote'></p>
+								</div>
+							</div>
+
+
+							<div class="circle">
+								<i class="active_circle fas fa-circle"></i>
+								<i class="fas fa-circle"></i>
+							</div>
+						</div>
+					</div>
 					<!-- blocco 5: Latest Posts -->
 				</main>
 

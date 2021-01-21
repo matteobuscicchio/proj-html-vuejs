@@ -150,6 +150,28 @@ let sofboxApp = new Vue({
                 cardImg: 'assets/img/logo.png',
             },
         ],
+
+        // blocco 4: Testimonial
+        testimonial:[
+            {
+                title:'Our Testimonials',
+                description: `If yopu are planning on developing a product landing app or website, <br> take a look at this beautiful-crafted`,
+            }
+        ],
+        people:[
+            {
+                name: 'Julia Aann',
+                role: '- Coo Sofbox',
+                img: 'assets/img/20.jpeg',
+                quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis cupiditate dolor quibusdam est aperiam dignissimos!',
+            },
+            {
+                name: 'Mac Znder',
+                role: '- Manager Sofbox',
+                img: 'assets/img/21.jpeg',
+                quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis cupiditate dolor quibusdam est aperiam dignissimos',
+            },
+        ],
     },
 
     methods: {

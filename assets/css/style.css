@@ -47,6 +47,8 @@ body{
 	font-size: 0.8em;
 	font-family: Helvetica, Arial, Sans-Serif;
 	overflow-x: hidden;
+	height: 100%;
+    background: linear-gradient(180deg, #ffffff 80%, #f2f7ff 20%);
 }
 header{
 	background-color: white;
@@ -263,10 +265,9 @@ span > i{
 
 
 /* blocco 3: Popular Features */
-/* .features{
-	margin-bottom: 200px;
-} */
-
+.features{
+	margin-bottom: 100px;
+}
 .sphere{
 	height: 0px;
 }
@@ -307,7 +308,39 @@ span > i{
 
 
 /* blocco 4: Testimonial */
+.testimonial{
+	text-align: center;
+	margin-bottom: 100px;
+}
 
+.testimonial_info{
+	margin-bottom: 100px;
+}
+
+.little_card{
+	display: inline-block;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 40px;
+	width: 450px;
+	background-color: #ffffff80;
+	box-shadow: 0 5px 10px 5px #00000008, 0 0 20px 0#00000008;
+}
+.little_card > img{
+	width: 50px;
+	border: 1 solid white;
+	border-radius: 50px;
+}
+
+.circle{
+	position: relative;
+	top: 30px;
+	margin-bottom: 100px;
+}
+
+.active_circle{
+	color: #377dff;
+}
 
 
 

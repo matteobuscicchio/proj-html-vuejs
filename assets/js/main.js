@@ -83,6 +83,26 @@ let sofboxApp = new Vue({
                 management: 'Social management',
             }
         ],
+
+        // blocco 2: Tips&Tricks
+        tipsAndTricks: [
+            {
+                title: 'Get tips on how to <br> skyrocket your sales.',
+                description: `Faff about only a quild blower i don't want no agro bleeding chimny pot <br> burke tosser cras nice one boot fanny!`,
+            },
+            {
+                cards:[
+                    {
+                     title: 'Reporting Analysis',
+                     description: `Faff about only a quild blower i don't want no agro bleeding chimny pot <br> burke tosser cras nice one boot fanny!`,
+                    },
+                    {
+                        title: 'Technical SEO Adult',
+                        description: `Faff about only a quild blower i don't want no agro bleeding chimny pot <br> burke tosser cras nice one boot fanny!`,
+                    },
+                ]
+            }
+        ],
     },
 
     methods: {

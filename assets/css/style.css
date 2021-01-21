@@ -75,12 +75,18 @@ li{
 	list-style-type: none;
 }
 
+h2, h3{
+	font-weight: 100;
+}
+h2{
+	line-height: 1.5em;
+	font-size: 2em;
+	font-weight: 100;
+}
+
 p{
 	color: #8e989f;
 	line-height: 1.5em;
-	font-size: 1em;
-	margin-top: 10px;
-	margin-bottom: 25px;
 }
 
 /* flex */
@@ -151,7 +157,6 @@ form > .fa-shopping-cart{
 /* HEADER LOWER */
 /* sezione: Platform & Button */
 .pltf_btn{
-	height: 370px;
 	background-color: #f2f7ff;
 	margin-bottom: 50px;
 }
@@ -159,7 +164,6 @@ form > .fa-shopping-cart{
 .platform > h1{
 	margin-top: 30px;
 	margin-bottom: 20px;
-	line-height: 2em;
 }
 .platform > p{
 	margin-bottom: 30px;
@@ -177,11 +181,16 @@ form > .fa-shopping-cart{
 	height: 385px;
 }
 
+
+
+
 /* MAIN */
 main{
-	width: 1024px;
+	width: 1000px;
 	margin: 0px auto;
 }
+
+
 /* blocco 1: Online Marketing */
 .on_marketing_ul{
 	margin-bottom: 50px;
@@ -190,32 +199,62 @@ main{
 .on_marketing{
 	margin: 30px;
 }
+
+.on_marketing > p{
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
 .on_marketing > img{
 	width: 60px;
 	position: relative;
 	transform: translate(-110%, 100%);
 }
-.on_marketing > h3{
-	font-weight: 100;
-	font-size: 1.5em;
-}
+
 .on_marketing > span{
 	margin-bottom: 15px;
 	display: block;
-}
-
-span{
-	font-weight: 600;
 }
 
 span > i{
 	margin-right: 15px;
 	color: #377dff;
 }
-/* sezione: Tips&Tricks */
-/* sezione: Popular Features */
-/* sezione: Testimonial */
-/* sezione: Latest Posts */
+
+
+
+
+/* blocco 2: Tips&Tricks */
+.tips{
+	margin-bottom: 50px;
+}
+
+.platform > h3{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.platform > p{
+	margin-bottom: 30px;
+}
+
+.platform > .button{
+	margin-bottom: 60px;
+}
+
+.large_card > h3{
+	color: #377dff;
+}
+
+.jumbotron{
+	position: relative;
+    transform: translate(0%, 6%);
+}
+.jumbotron > img{
+	height: 385px;
+}
+
+/* blocco 3: Popular Features */
+/* blocco 4: Testimonial */
+/* blocco 5: Latest Posts */
 
 
 /* FOOTER */

@@ -56,7 +56,7 @@
 					<div class="space_around pltf_btn">
 
 						<div class="platform"  v-for='content in platform'>
-							<h1 v-html='content.title'></h1>
+							<h2 v-html='content.title'></h2>
 							<p v-html='content.description'></p>
 							<button class="button" type="submit" v-html='button.more'></button>
 						</div>
@@ -84,16 +84,19 @@
 
 					<!-- blocco 2: Tips&Tricks -->
 
-					<div class="space_around pltf_btn">
+					<div class="space_around tips">
 
-						<div class="platform"  v-for='content in platform'>
-							<h1 v-html='content.title'></h1>
+						<div class="platform"  v-for='content in tipsAndTricks'>
+							<h2 v-html='content.title'></h2>
 							<p v-html='content.description'></p>
-							<button class="button" type="submit" v-html='button.more'></button>
+						</div>
+						<div class="large_card" v-for='content in tipsAndTricks[1].cards'>
+							<h3 v-html='content.title'></h3>
+							<p v-html='content.description'></p>
 						</div>
 
 						<div class="jumbotron">
-							<img :src="img.jumbotron" alt="Jumbotron">
+							<img :src="img.jumbotronTips" alt="Jumbotron whit talking persons">
 						</div>
 					</div>
 

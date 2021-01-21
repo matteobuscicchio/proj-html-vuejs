@@ -94,7 +94,7 @@ let sofboxApp = new Vue({
         ],
         cards:[
             {
-                style: 'active_tip',
+                style: '',
                 active: true,
                 cardImg: 'assets/img/analysis.png',
                 title: 'Reporting Analysis',

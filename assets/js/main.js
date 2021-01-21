@@ -85,24 +85,29 @@ let sofboxApp = new Vue({
         ],
 
         // blocco 2: Tips&Tricks
-        tipsAndTricks: [
+        tipsIndex: 0,
+        infoTip:[
             {
-                title: 'Get tips on how to <br> skyrocket your sales.',
+                title: 'Get tips tricks on how to <br> skyrocket your sales.',
                 description: `Faff about only a quild blower i don't want no agro bleeding chimny pot <br> burke tosser cras nice one boot fanny!`,
-            },
-            {
-                cards:[
-                    {
-                     title: 'Reporting Analysis',
-                     description: `Faff about only a quild blower i don't want no agro bleeding chimny pot <br> burke tosser cras nice one boot fanny!`,
-                    },
-                    {
-                        title: 'Technical SEO Adult',
-                        description: `Faff about only a quild blower i don't want no agro bleeding chimny pot <br> burke tosser cras nice one boot fanny!`,
-                    },
-                ]
             }
         ],
+        cards:[
+            {
+                style: 'active_tip',
+                active: true,
+                cardImg: 'assets/img/analysis.png',
+                title: 'Reporting Analysis',
+                description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti cumque ipsa delectus culpa quo repellat eos dicta, consectetur.`,
+            },
+            {
+                style: '',
+                active: false,
+                cardImg: 'assets/img/seo.png',
+                title: 'Technical SEO Adult',
+                description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti cumque ipsa delectus culpa quo repellat eos dicta, consectetur.`,
+            },
+        ]
     },
 
     methods: {
@@ -113,11 +118,24 @@ let sofboxApp = new Vue({
         },
         addClass: function(i){
             let activeSearch = this.navbar[i].active;
-            let activeStyle = this.navbar[i].style;
             if (!(activeSearch)) {
                 return 
             } else {
-                return activeStyle = 'active'
+                return 'active'
+            }
+        },
+
+        // blocco 2: Tips&Tricks
+        activeTip: function(index){
+            this.tipsIndex = index;
+            console.log(this.tipsIndex);
+        },
+        addClassTips(i){
+            let activeSearch = this.cards[i].active;
+            if (!(activeSearch)) {
+                return 
+            } else {
+                return 'active_tip'
             }
         },
     },

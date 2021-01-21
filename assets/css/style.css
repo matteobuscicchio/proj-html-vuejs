@@ -234,9 +234,28 @@ span > i{
 	margin-bottom: 30px;
 }
 
+.card{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 1px;
+}
+.card > img{
+	width: 60px;
+	margin: 15px;
+}
+
 .large_card > h3{
 	color: #377dff;
+	margin-bottom: 15px;
 }
+.large_card > p{
+	padding-right: 20px;
+}
+
+.active_tip{
+	background-color: #000000;
+}
+
 
 
 /* blocco 3: Popular Features */

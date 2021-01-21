@@ -87,14 +87,18 @@
 					<div class="space_around tips">
 
 						<div class="tips_info">
-							<div class="tips"  v-for='content in tipsAndTricks'>
+							<div class="tips"  v-for='content in infoTip'>
 								<h2 v-html='content.title'></h2>
 								<p v-html='content.description'></p>
 							</div>
 	
-							<div class="large_card" v-for='content in tipsAndTricks[1].cards'>
-								<h3 v-html='content.title'></h3>
-								<p v-html='content.description'></p>
+							<div class="card space_around" v-for='(content,tipsIndex) in cards'
+							@click="activeTip(tipsIndex)" :class='addClassTips(tipsIndex)'>
+								<img :src="content.cardImg" alt="Jumbotron whit talking persons">
+								<div class="large_card">
+									<h3 v-html='content.title'></h3>
+									<p v-html='content.description'></p>
+								</div>
 							</div>
 						</div>
 

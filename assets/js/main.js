@@ -22,7 +22,7 @@ let sofboxApp = new Vue({
         linkIndex: 0,
         navbar:[
             {
-                style: 'active',
+                style: '',
                 active: true,
                 section: 'Home'
             },
@@ -115,7 +115,7 @@ let sofboxApp = new Vue({
             let activeSearch = this.navbar[i].active;
             let activeStyle = this.navbar[i].style;
             if (!(activeSearch)) {
-                return
+                return 
             } else {
                 return activeStyle = 'active'
             }

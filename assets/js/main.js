@@ -172,6 +172,31 @@ let sofboxApp = new Vue({
                 quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis cupiditate dolor quibusdam est aperiam dignissimos',
             },
         ],
+
+        // blocco 5: Latest Posts
+        latestPostDescription:[
+            {
+                title:'Our Testimonials',
+                description: `If yopu are planning on developing a product landing app or website, <br> take a look at this beautiful-crafted`,
+            }
+        ],
+        posts:[
+            {
+                title: 'Life Lack Meaning',
+                img: 'assets/img/18.jpg',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis cupiditate dolor quibusdam est aperiam dignissimos!',
+            },
+            {
+                title: 'Life Lack Meaning',
+                img: 'assets/img/17.jpg',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis cupiditate dolor quibusdam est aperiam dignissimos',
+            },
+            {
+                title: 'Life Lack Meaning',
+                img: 'assets/img/19.jpg',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis cupiditate dolor quibusdam est aperiam dignissimos',
+            }
+        ],
     },
 
     methods: {

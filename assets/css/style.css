@@ -8,7 +8,7 @@
 
 /* 
 	sezione: COLORI
-
+/*  */
 	.bkg_cl{
 		background-color: #ffffff;
 		background-color: #f2f7ff;
@@ -296,9 +296,13 @@ span > i{
 
 .feature_card{
 	margin: 10px;
-    padding: 5px;
+    padding: 20px;
     width: 230px;
 }
+.feature_card:hover{
+	background-color: #6cdac1;
+}
+
 .feature_card > img{
 	width: 40px;
 	margin-top: 20px;
@@ -346,6 +350,42 @@ span > i{
 
 
 /* blocco 5: Latest Posts */
+.latest{
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.latest_info{
+	margin-bottom: 100px;
+}
+
+.latest_container{
+	text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.latest_cards{
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 40px;
+	background-color: #ffffff80;
+	box-shadow: 0 5px 10px 5px #00000008, 0 0 20px 0#00000008;
+}
+.latest_card > img{
+	width: 200px;
+	border: 1 solid white;
+}
+
+.circle{
+	position: relative;
+	top: 30px;
+	margin-bottom: 100px;
+}
+
+.active_circle{
+	color: #377dff;
+}
 
 
 

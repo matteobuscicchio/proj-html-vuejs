@@ -176,8 +176,8 @@ let sofboxApp = new Vue({
         // blocco 5: Latest Posts
         latestPostDescription:[
             {
-                title:'Our Testimonials',
-                description: `If yopu are planning on developing a product landing app or website, <br> take a look at this beautiful-crafted`,
+                title:'Latest Posts',
+                description: `If yopu are planning on developing a product landing`,
             }
         ],
         posts:[
